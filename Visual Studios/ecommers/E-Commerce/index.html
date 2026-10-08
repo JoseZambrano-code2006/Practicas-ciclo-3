@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="resources/img/logo/Logo-PavoReal.png" type="image/x-icon">
+  <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/styles.css">
+  <title>Commerline</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-light bg-light main-header">
+      <div class="container-fluid justify-content-end">
+        <ul class="nav auth-links">
+          <li class="nav-item">
+            <a class="nav-link me-1" href="register_profile.html" target="_parent">Registrar Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html" target="_parent">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar top-bar py-3 bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html">Commerline</a>
+        <div class="d-flex align-items-center ms-auto">
+          <form class="d-flex" role="search">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary" type="submit"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+
+          <button type="button" class="btn btn-outline-primary position-relative ms-1" data-bs-toggle="modal"
+            data-bs-target="#cartModal"><i class="fa-solid fa-cart-shopping"></i>
+            <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">Productos En El Carrito</span>
+            </span>
+          </button>
+
+          <div class="dropdown mx-1">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="userDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-circle-user"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="login.html"><i class="fa-brands fa-pagelines"></i> Iniciar sesión</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navigation py-1 navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house-chimney"></i> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products_joyeria.html"><i class="fa-regular fa-gem"></i> Joyería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products_ofertas.html"><i class="fa-solid fa-gift"></i> Ofertas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="container-fluid">
+
+    <div id="carouselInicio" class="carousel carousel-dark slide mx-1 my-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="resources/img/products/carousel/Joyas/collares aesa.jpg"
+            class="d-block w-100" alt="Joyería">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Joyería</h3>
+            <p>Detalles que brillan con tu personalidad, para cada ocasión.</p>
+            <div class="card-button d-flex">
+              <a href="products_joyeria.html" class="btn carousel-button">Ver Colección</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="resources/img/products/carousel/Ofertas/Oferta-inicio.jpg" class="d-block w-100"
+            alt="Ofertas">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Ofertas</h3>
+            <p>Tus favoritos con descuentos imperdibles por tiempo limitado.</p>
+            <div class="card-button d-flex">
+              <a href="products_maquillaje.html" class="btn carousel-button">Aprovecha Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="tarjeta-ancha mx-1 my-4">
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="resources/img/products/carousel/pexels-shattha-pilabut-38930-135620.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5 m-auto">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">Tu Tienda, Tu Estilo</h2>
+              <p class="card-text fs-5">Diseñado para ti: rápido, seguro y con lo mejor en tendencias, performance y
+                cuidado. Desde tus zapatillas favoritas hasta ese tratamiento facial que te hace brillar, aquí
+                encuentras lo que te representa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-5 m-auto">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">Con propósito y pasión</h2>
+              <p class="card-text fs-5">No solo vendemos productos, promovemos un estilo de vida. Cada prenda, cada
+                fragancia, cada detalle está pensado para acompañarte en tus metas y expresar tu esencia. Apostamos por
+                la innovación, la diversidad y el impacto positivo en cada paso.</p>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <img src="resources/img/products/carousel/pexels-david-bartus-43782-610293.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="three-card mx-1 my-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 business-cards">
+        <div class="col">
+          <div class="card h-100">
+            <img src="resources/img/products/carousel/pexels-alexandra-maria-58259-318236.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Estilo Que Te Mueve</h5>
+              <p class="card-text my-3">Descubre colecciones que combinan innovación, diseño y rendimiento. Desde ropa
+                deportiva de alto nivel hasta productos de belleza que empoderan tu rutina. Diseñado para quienes viven
+                con propósito.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="resources/img/products/carousel/pexels-ron-lach-7944399.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Belleza Con Impacto</h5>
+              <p class="card-text my-3">Productos que cuidan de ti y del planeta. Nuestra línea se inspira en la
+                naturaleza y la ciencia, con fórmulas conscientes y resultados visibles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="resources/img/products/carousel/pexels-amina-filkins-5414010.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Energía Que Inspira</h5>
+              <p class="card-text my-3">Creemos en el poder del movimiento y la autenticidad. Ya sea en las calles o en
+                el gimnasio, nuestros productos están hechos para elevar tu estilo y tu confianza cada día.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories-card mx-1 my-4">
+      <div class="card px-3 py-4">
+        <h2 class="title text-center mb-5">Nuestras Categorías</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4 categories">
+
+          <div class="col category-card">
+            <div class="card h-100">
+              <img src="resources/img/products/Tarjetas/Joyas.jpg" class="card-img-top" alt="Joyería">
+              <div class="card-body text-card">
+                <h5 class="card-title">Joyería</h5>
+                <p class="card-text">La joyería perfecta no solo adorna, cuenta tu historia. Brilla con piezas que
+                  reflejan tu esencia.</p>
+              </div>
+              <div class="card-button d-flex mx-auto mb-3">
+                <a href="products_joyeria.html" class="btn btn-primary product-category">Ver Productos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col offer-card">
+            <div class="card h-100">
+              <img src="resources/img/products/Tarjetas/Ofertas.jpg" class="card-img-top" alt="Ofertas">
+              <div class="card-body card-offer">
+                <h5 class="card-title">Ofertas</h5>
+                <p class="card-text">Aprovecha nuestras ofertas exclusivas y renueva tu estilo con productos de calidad
+                  a
+                  precios increibles.</p>
+              </div>
+              <div class="card-button d-flex mx-auto mb-3">
+                <a href="products_ofertas.html" class="btn btn-dark offer-category px-4">Ver Oferta</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Tu Carrito de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="cart-items">
+                  <tr>
+                    <td colspan="5" class="text-center">Tu carrito está vacío</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="text-end fw-bold">Total:</td>
+                    <td id="cart-total" class="fw-bold">$0</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+            <button type="button" class="btn btn-primary" id="checkout-btn">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+
+    <div class="container-fuid footer">
+      <div class="container">
+        <div class="row my-4 cuadro-principal">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-lg-start">
+            <div class="footer-brand mb-3">
+              <a href="index.html" class="logo">Commerline</a>
+            </div>
+            <p class="mb-3">
+              Haz de cada compra una experiencia única.<br>
+              Disfruta de un mundo de posibilidades.
+            </p>
+            <ul class="social-list justify-content-center justify-content-lg-start">
+              <li>
+                <a href="https://facebook.com" target="_blank" class="social-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://snapchat.com" target="_blank" class="social-link">
+                  <i class="fab fa-snapchat"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 text-center text-lg-start">
+            <h5 class="footer-list-title mb-3">Sobre Nosotros</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="page_nuestra_historia.html" class="footer-link" target="_blank">Nuestra Historia</a>
+              </li>
+              <li class="mb-2">
+                <a href="page_normas_comunitarias.html" class="footer-link" target="_blank">Normas Comunitarias</a>
+              </li>
+              <li class="mb-2">
+                <a href="page_informacion.html" class="footer-link" target="_blank">Información</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ps-lg-5">
+            <h5 class="footer-list-title mb-3 text-center text-lg-start">Contactanos</h5>
+            <ul class="list-unstyled text-center text-lg-start">
+              <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <div class="contact-icon me-2">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <span class="contact-link">
+                  Jr. Los Mártires Nro. 340,<br>Tarapoto 22201
+                </span>
+              </li>
+              <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <div class="contact-icon me-2">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <span class="contact-link">+51 921 218 173</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <div class="contact-icon me-2">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <span class="contact-link">commerline@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center text-lg-start">
+            <h5 class="footer-list-title mb-3">Hoja Informativa</h5>
+            <p class="mb-3">
+              En todo momento siempre estamos aquí para escucharte, porque nos importas tú.
+            </p>
+            <div class="flex-lg-row justify-content-between align-items-center">
+              <button type="button" class="btn btn-light button-email px-5" data-bs-toggle="modal"
+                data-bs-target="#enviarReclamoModal">Email Address * <i class="fa-regular fa-envelope"
+                  style="color: #ff4500;"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cuadro-secundario mt-4">
+        <div class="container">
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+            <p class="copyright mb-2 mb-lg-0 text-center text-lg-start">
+              Copyright &copy; 2025 Commerline | <a href="page_derechos_reservados.html" class="derechos-reservados"
+                target="_blank">Todos los
+                derechos reservados</a>
+            </p>
+            <ul class="footer-bottom-list">
+              <li class="d-inline-block me-3">
+                <a href="page_terminos_y_condiciones.html" class="footer-bottom-link" target="_blank">Términos y
+                  Condiciones</a>
+              </li>
+              <li class="d-inline-block">
+                <a href="page_politica_de_privacidad.html" class="footer-bottom-link" target="_blank">Política de
+                  Privacidad</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="enviarReclamoModal" aria-labelledby="enviarReclamoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h5 class="modal-title w-100" id="enviarReclamoModalLabel">Consultas y Reclamos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                  <div class="col-lg-6 mb-3">
+                    <label for="nombreReclamo" class="col-form-label">Nombres:</label>
+                    <input type="text" class="form-control" id="nombreReclamo" placeholder="Nombre completo">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="apellidoReclamo" class="col-form-label">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidoReclamo" placeholder="Apellido completo">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="emailReclamo" class="col-form-label">E-Mail:</label>
+                    <input type="text" class="form-control" id="emailReclamo" placeholder="Correo Electrónico">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="telefonoReclamo" class="col-form-label">Telefono:</label>
+                    <input type="text" class="form-control" id="telefonoReclamo" placeholder="Número de celular">
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="mensajeReclamo" class="col-form-label">Cuentanos Que Paso:</label>
+                    <textarea class="form-control" id="mensajeReclamo"></textarea>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="imagenReclamo" class="form-label">Imagen Del Problema</label>
+                    <input class="form-control" type="file" id="imagenReclamo" accept="image/*">
+
+                    <div id="imagenPrevia" class="mt-2 text-center" style="display: none;">
+                      <img id="previaImagen" src="" alt="Vista Previa De La Imagen" class="img-thumbnail"
+                        style="max-height: 200px;">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i>
+                Cerrar</button>
+              <button type="button" class="btn btn-success"><i class="fa-solid fa-paper-plane"></i> Enviar
+                Reporte</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="resources/js/bootstrap.bundle.min.js"></script>
+
+  <script src="resources/img/icons/iconos.js"></script>
+
+  <script src="resources/js/footer.js"></script>
+
+</body>
+
+</html>

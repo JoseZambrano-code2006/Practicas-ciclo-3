@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/logo/Logo-PavoReal.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/tabla.css">
+    <title>Commerline</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <h1 class="text-center py-5">Ofertas</h1>
+
+        <div class="section-container text-center">
+
+            <div class="card mx-1 my-4">
+                <div class="card-header">
+                    <h2>Tarjeta De Género</h2>
+
+                    <button type="button" class="btn btn-success d-flex ms-auto align-items-center"
+                        data-bs-toggle="modal" data-bs-target="#tarjetaGeneroCP" data-bs-whatever="@mdo"><i
+                            class="fa-solid fa-venus-mars"></i>&nbsp;Nuevo</button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">N°</th>
+                                    <th scope="col">Tarjeta De</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Controles</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mujer</td>
+                                    <td><span class="badge text-bg-success">Activo</span>
+                                        <span class="badge text-bg-warning">Inactivo</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-wrap gap-2 card-buttons">
+                                            <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                            <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center">
+
+            <div class="card mx-1 my-4">
+                <div class="card-header">
+                    <h2>Submenú De Productos</h2>
+
+                    <button type="button" class="btn btn-success d-flex ms-auto align-items-center"
+                        data-bs-toggle="modal" data-bs-target="#submenuProductoCP" data-bs-whatever="@mdo"><i
+                            class="fa-solid fa-seedling"></i>&nbsp;Nuevo</button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">N°</th>
+                                    <th scope="col">Tarjeta De</th>
+                                    <th scope="col">Tarjeta Del Producto</th>
+                                    <th scope="col">Descuento</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Alt Imagen</th>
+                                    <th scope="col">Marca</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Talla</th>
+                                    <th scope="col">Precio Original</th>
+                                    <th scope="col">Precio Con Descuento</th>
+                                    <th scope="col">Nombre Del Botón</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Controles</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mujer</td>
+                                    <td>Cremas Hidratantes</td>
+                                    <td>20%</td>
+                                    <td>www/img</td>
+                                    <td>Imagen De Cremas</td>
+                                    <td>L'Oréal</td>
+                                    <td>Base de maquillaje</td>
+                                    <td>Base líquida de larga duración, acabado mate, 30 tonos disponibles</td>
+                                    <td>27</td>
+                                    <td>$ 62.500</td>
+                                    <td>$ 50.500</td>
+                                    <td>Añadir Al Carrito</td>
+                                    <td><span class="badge text-bg-success">Activo</span>
+                                        <span class="badge text-bg-warning">Inactivo</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-wrap gap-2 card-buttons">
+                                            <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                            <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="tarjetaGeneroCP" tabindex="-1" aria-labelledby="tarjetaGeneroCPLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="tarjetaGeneroCPLabel">Crear Tarjeta De Género
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="tarjetaGenero" class="col-form-label">Tarjeta De:</label>
+                                <input type="text" class="form-control" id="tarjetaGenero">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="submenuProductoCP" tabindex="-1" aria-labelledby="submenuProductoCPLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="submenuProductoCPLabel">Crear Submenú De
+                            Productos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="generoSubmenu" class="col-form-label">Tarjeta De:</label>
+                                <select class="form-select" id="generoSubmenu">
+                                    <option selected>Elige El Género En La Tarjeta</option>
+                                    <option value="tarjetaMujer">Mujer</option>
+                                    <option value="tarjetaVaron">Varon</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tarjetaDeProductos" class="col-form-label">Tarjeta De Productos:</label>
+                                <select class="form-select" id="tarjetaDeProductos">
+                                    <option selected>Elije La Tarjeta Donde Estara</option>
+                                    <option value="submenuCremasHidratantes">Cremas Hidratantes</option>
+                                    <option value="submenuDesodorantes">Desodorantes</option>
+                                    <option value="submenuJabones">Jabones</option>
+                                    <option value="submenuShampoos">Shampoos</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="descuento" class="form-label">Descuento:</label>
+                                <input class="form-control" type="file" id="descuento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="marca" class="col-form-label">Marca:</label>
+                                <input type="text" class="form-control" id="marca">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipoProducto" class="col-form-label">Tipo De Producto:</label>
+                                <input type="text" class="form-control" id="tipoProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcionProducto" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcionProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tallaProducto" class="col-form-label">Talla:</label>
+                                <input type="text" class="form-control" id="tallaProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precioOriginalProducto" class="col-form-label">Precio Original:</label>
+                                <input type="text" class="form-control" id="precioOriginalProducto" value="S/. ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precioDescuentoProducto" class="col-form-label">Precio Con
+                                    Descuento:</label>
+                                <input type="text" class="form-control" id="precioDescuentoProducto" value="S/. ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombreBoton" class="col-form-label">Nombre Del Botón:</label>
+                                <input type="text" class="form-control" id="nombreBoton">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+
+    <script src="resources/img/icons/iconos.js"></script>
+
+</body>
+
+</html>

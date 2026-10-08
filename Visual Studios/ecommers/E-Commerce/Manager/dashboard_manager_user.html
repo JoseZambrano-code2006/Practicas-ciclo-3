@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/logo/Logo-PavoReal.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/dashboard_manager_user.css">
+    <title>Commerline</title>
+</head>
+
+<body>
+
+    <div class="container-fluid my-4">
+
+        <h1 class="text-center">Panel De Usuario</h1>
+
+        <div class="section-container text-center mt-5">
+            <h2>Datos</h2>
+
+            <button type="button" class="btn btn-success ms-auto d-flex mx-3 my-4" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive mx-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">DNI</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Género</th>
+                            <th scope="col">Nacimiento</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Contraseña</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Controles</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Marck Bley</td>
+                            <td>Jobs Gates</td>
+                            <td>12345678</td>
+                            <td>marc17@gmail.com</td>
+                            <td>123456789</td>
+                            <td>Masculino</td>
+                            <td>19/12/2004</td>
+                            <td>marc_bley</td>
+                            <td>Galacter19</td>
+                            <td>182361058247</td>
+                            <td>Gerente</td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                    <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">Registrar Usuario</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="nombres" class="col-form-label">Nombres:</label>
+                                <input type="text" class="form-control" id="nombres">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidos" class="col-form-label">Apellidos:</label>
+                                <input type="text" class="form-control" id="apellidos">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dni" class="col-form-label">DNI:</label>
+                                <input type="text" class="form-control" id="dni" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="col-form-label">Telefono:</label>
+                                <input type="tel" class="form-control" id="telefono" maxlength="9">
+                            </div>
+                            <div class="mb-3">
+                                <label class="col-form-label">Género:</label><br>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="genero" id="genero_mas"
+                                        value="Masculino">
+                                    <label class="form-check-label" for="genero_mas">Masculino</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="genero" id="genero_fem"
+                                        value="Femenino">
+                                    <label class="form-check-label" for="genero_fem">Femenino</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha_nacimiento" class="col-form-label">Fecha de Nacimiento:</label>
+                                <input type="date" class="form-control" id="fecha_nacimiento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre_usuario" class="col-form-label">Nombre de Usuario:</label>
+                                <input type="text" class="form-control" id="nombre_usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contraseña" class="col-form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="contraseña">
+                            </div>
+                            <div class="mb-3">
+                                <label for="codigo" class="col-form-label">Código:</label>
+                                <input type="text" class="form-control" id="codigo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cargo" class="col-form-label">Cargo:</label>
+                                <select class="form-select" id="cargo">
+                                    <option selected>Selecciona Una Opción</option>
+                                    <option value="administrador">Administrador</option>
+                                    <option value="empleado">Empleado</option>
+                                    <option value="gerente">Gerente</option>
+                                    <option value="supervisor">Supervisor</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="js/iconos.js"></script>
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ecommerce</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!--cambio de clase  <span class="navbar-toggler-icon"></span> a <i class="fa-solid fa-bars"></i> usando fontAwesome-->
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html"><img src="img/icono.png"
+                                width="25px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gestion de ventas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="ventas.html">Ventas</a></li>
+                            <li><a class="dropdown-item" href="registro_ventas.html">Registro de Ventas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                </form>
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="userDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Perfil
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="login.html">Iniciar sesión</a></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Cuerpo de la página -->
+    <div class="container mt-4 col-lg-4 mb-5">
+        <form id="ventaForm" class="card col-sm-10 mt-5">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                    <div class="invalid-feedback waz">coloque un mensaje</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="email">
+                        <div class="form-text input-group">Nunca compartiremos su correo electrónico con nadie más.
+                        </div>
+                        <div class="invalid-feedback">Por favor, ingrese un correo válido.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono">
+                    <div class="invalid-feedback">El teléfono debe contener solo números.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="producto" class="form-label">Producto Vendido</label>
+                    <input type="text" class="form-control" id="producto">
+                    <div class="invalid-feedback">El producto es obligatorio.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input class="form-control" type="number" id="cantidad" placeholder="0">
+                    <div class="invalid-feedback">La cantidad debe ser un número positivo entero.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="precio" class="form-label">Precio Total</label>
+                    <input class="form-control" type="number" id="precio" step="0.01" placeholder="0.00">
+                    <div class="invalid-feedback">El precio debe ser un número positivo.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha_creacion" class="form-label">Fecha de Venta</label>
+                    <input class="form-control" type="date" id="fecha_creacion">
+                    <div class="invalid-feedback">Marque una fecha</div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" type="submit">Registrar Venta</button>
+                    <button class="btn btn-secondary" type="reset">Limpiar Formulario</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+
+    <!-- Script de validación -->
+    <script src="js/validaciones.js"> </script>
+
+
+
+
+</body>
+
+</html>

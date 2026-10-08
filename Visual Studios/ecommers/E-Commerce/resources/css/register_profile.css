@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(194, 193, 193);
+}
+
+.card {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(241, 241, 241);
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+form {
+    justify-content: center;
+}
+
+.logger-profile {
+    text-align: center;
+}
+
+.register-b {
+    background-color: #4361ee !important;
+    color: white !important;
+    border: none;
+    font-weight: 400;
+}
+
+.register-b:hover {
+    background-color: #3a56d4 !important;
+    color: white !important;
+}
+
+.profile-link {
+    text-align: center;
+}
+
+.go-back {
+    color: #707070;
+    text-decoration: none;
+}
+
+.go-back:hover {
+    color: black;
+    font-weight: 600;
+}

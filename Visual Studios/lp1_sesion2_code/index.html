@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+    <title>Ecommer</title>
+</head>
+
+<body>
+    <form method="post" action="sesion1_cv.html">
+        <card>
+            <card-title><strong>Registrar producto</strong> </card-title>
+
+            <div>
+                <label>Nombre del producto</label>
+                <input type="text" name="nom_product" id="nom_product" placeholder="ejem: Relojes">
+            </div>
+            <div>
+                <label>Categoria del producto</label>
+                <select name="cat_product" id="cat_product">
+                    <option value="0">Seleccionar</option>
+                    <option value="1">Bebidas</option>
+                    <option value="2">platos de fondo</option>
+                    <option value="3">Entradas</option>
+                </select>
+            </div>
+            <div>
+                <p>Estado:</p>
+                <label>Activo</label>
+                <input type="radio" name="nom_product" id="nom_product" value="activo">
+                <label>Inactivo</label>
+                <input type="radio" name="nom_product" id="nom_product" value="inactivo">
+            </div>
+            <div>
+                <p>Servicios basicos:</p>
+                <label>Agua</label>
+                <input type="checkbox" name="agua" id="agua" value="agua">
+                <label>Luz</label>
+                <input type="checkbox" name="Luz" id="Luz" value="Luz">
+            </div>
+            <br>
+            <div>
+                <input type="file" value="cargar_archivo">
+            </div>
+            <br>
+            <input type="text" name="nom_product" id="nom_product" >
+            <input type="datetime-local" name="nom_product" id="nom_product" placeholder="ejem: Relojes">
+
+
+
+            <button name="guardar" type="submit">Guardar</button>
+
+        </card>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/*RESETEAR LOS MARGENES DE LOS NAVEGADORES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boton {
+    background: green;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton:hover {
+    /*background: red;*/
+    background: white;
+    border: 1px solid #dddddd;
+    color: black;
+}
+
+.boton:active {
+    background: orange;
+    color: black;
+}
+
+input {
+    display: block;
+    padding: 10px;
+}
+input:focus{
+    background: white;
+    outline-color: green;
+}
+
+/*seudo elementos*/
+
+p::selection{
+    background: yellowgreen;
+    color: white;
+}
+p::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}

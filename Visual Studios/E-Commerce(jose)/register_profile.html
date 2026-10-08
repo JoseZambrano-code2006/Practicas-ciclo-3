@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/logo/Logo-PavoReal.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/register_profile.css">
+    <title>Commerline</title>
+</head>
+
+<body>
+
+    <div class="content mx-3 my-3">
+
+        <div class="card px-3 py-3">
+
+            <form class="row g-4">
+                <h2 class="card-title">Registro</h2>
+                <p class="card-text">Complete el formulario para crear su cuenta en Commerline</p>
+
+                <div class="col-md-4">
+                    <label for="nombres" class="col-form-label">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres" placeholder="Ingrese su nombre completo"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="apellidos" class="col-form-label">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Ingrese su apellido completo"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="dni" class="col-form-label">DNI: <i class="fa-solid fa-circle-question"
+                            style="color: #9fa0a3;" data-bs-toggle="tooltip" data-bs-placement="right"
+                            data-bs-title="Al proporcionar tu DNI, te aseguras de que la información sea
+                                verificada. Para obtener más detalles, visita nuestra Política de Privacidad."></i></label>
+                    <input type="text" class="form-control" id="dni" maxlength="8" placeholder="Ingrese su DNI"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="telefono" class="col-form-label">Telefono:</label>
+                    <input type="tel" class="form-control" id="telefono" maxlength="9"
+                        placeholder="Ingrese su número de celular" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="col-form-label">Género:</label><br>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="genero_mas" value="Masculino">
+                        <label class="form-check-label" for="genero_mas">Masculino</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="genero_fem" value="Femenino"
+                            required>
+                        <label class="form-check-label" for="genero_fem">Femenino</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="fecha_nacimiento" class="col-form-label">Fecha de Nacimiento:</label>
+                    <input type="date" class="form-control" id="fecha_nacimiento" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="nombre_usuario" class="col-form-label">Nombre de Usuario: <i
+                            class="fa-solid fa-circle-question" style="color: #9fa0a3;" data-bs-toggle="tooltip"
+                            data-bs-placement="right" data-bs-title="El inicio de sesion es con nombre de usuario. Se le recomienda
+                                recordar su nombre de usuario al crear su cuenta."></i></label>
+                    <input type="text" class="form-control" id="nombre_usuario"
+                        placeholder="Ingrese un nombre de usuario" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="contraseña" class="col-form-label">Contraseña: <i class="fa-solid fa-circle-question"
+                            style="color: #9fa0a3;" data-bs-toggle="tooltip" data-bs-placement="right"
+                            data-bs-title="La contraseña te permitirá iniciar sesión e ingresar de forma segura a tu cuenta en esta aplicación."></i></label>
+                    <div class="position-relative">
+                        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese una contraseña"
+                            required>
+                        <button
+                            class="btn position-absolute end-0 top-50 translate-middle-y bg-transparent border-0 p-0 me-3"
+                            type="button" id="toggle-contraseña" aria-label="Mostrar/ocultar contraseña">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-12 logger-profile">
+                    <button class="btn mt-2 px-5 py-2 register-b" type="submit"
+                        onclick="window.location.href='login.html'">Registrarse</button>
+                </div>
+
+                <div class="col-12 mt-4 profile-link">
+                    <a href="login.html" class="go-back">Volver al inicio de sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+
+    <script src="resources/img/icons/iconos.js"></script>
+
+    <script src="resources/js/tooltip.js"></script>
+
+    <script src="resources/js/mostrar_ocultar_contraseña.js"></script>
+
+</body>
+
+</html>

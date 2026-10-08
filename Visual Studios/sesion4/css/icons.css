@@ -1,0 +1,34 @@
+
+.boton-facebook{
+ background: #0863F7;
+ color: white;
+ padding: 10px;
+ border-radius: 5px;
+ margin: 10px;
+}
+.boton-instagram{
+    background: #ddd;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+   }
+   .boton-linkedin{
+    background: rgb(0,115,177);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+   }
+   
+/* cambia a todas las clases que tenga fa-
+[class="fa-"]{
+    background: red;
+}
+*/
+/* cambia a todos los href que tengan una pagina que termin en .com
+[href$=".com"]{
+    color:rgb(34, 250, 10);
+
+}
+*/

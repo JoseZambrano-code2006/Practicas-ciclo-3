@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/icon_pag.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Recetario</title>
+</head>
+
+<body>
+    <ul>
+        <h1><a href="menu.html">MENU DE NAVEGACIÓN</a></h1>
+        <li>
+            <a href="ver_receta.html">Ver receta</a>
+        </li>
+        <li><a href="crear_receta.html">Crear Receta</a></li>
+        <li><a href="salir.html">Salir</a></li>
+    </ul>
+
+    <!--open creacion de formulario-->
+    <h2>Formulario de crear Recetas</h2>
+    <div class="card">
+        <form action="ver_receta.html" method="post">
+                <!--nombre-->
+            <label for="nombre_receta">Nombre de la receta:</label><br>
+            <input type="text" id="nombre_receta" name="nombre_receta" required placeholder="nombre"><br>
+             <!--descripcion-->
+            <label for="descripcion">Descripcion:</label><br>
+            <textarea name="descripcion" id="descripcion" required rows="4"></textarea><br>
+            <!--precio-->
+            <label for="precio">Precio</label><br>
+            <input type="number" id="precio" name="precio" min="0" step="0.01" required placeholder="0.00"><br>
+                <!--tipo de receta-->
+                <label for="tipo_receta">Tipo de Receta:</label><br>
+                <select id="tipo_receta" name="tipo_receta" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="1">Entrante</option>
+                    <option value="2">Plato Principal</option>
+                    <option value="3">Postre</option>
+                    <option value="4">Bebida</option>
+                </select><br>
+                <!--fecha de creación-->
+                <label for="fecha_creacion">Fecha de Creación:</label><br>
+                <input type="date" id="fecha_creacion" name="fecha_creacion" required><br>
+    
+                <input type="submit" value="Enviar">
+
+
+
+        </form>
+
+    </div>
+    <!--close creacion de formulario-->
+
+
+
+
+</body>
+
+<footer class="footer">
+    <p> copyright &copy; JAST-2025 <br>
+        <a href="https://facebook.com" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
+                alt=""></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"
+                alt=""></a>
+    </p>
+
+</footer>
+
+</html>

@@ -1,0 +1,46 @@
+/*etiquetar estilo a un selector*/
+h1{
+    color: brown;
+    background: pink;
+}
+
+p{
+ color: blue;
+}
+
+/*agrupación de selectores*/
+ h2,span{
+    background: orange;
+    color: white;
+ }
+/*style a nivel de clases*/
+ .class_css{
+   background: green;
+ }
+ /*style a nivel de id*/
+#parrafo{
+ background: aqua;
+ color: black;
+}
+
+.principal>.titulo{
+ background: skyblue;
+}
+.nosotros>.titulo{
+    background: purple;  
+}
+
+/*modificar a todos las etiquetas de tipo class
+[class]{
+    background: black;
+}*/
+/*modificar a una etiqueta class en especifico*/
+a[class]{
+    background: rgb(250, 5, 5);
+    color: chartreuse;
+}
+.menu ~ li {
+  background: fuchsia;
+}
+
+

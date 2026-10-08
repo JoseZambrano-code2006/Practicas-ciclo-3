@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/logo/Logo-PavoReal.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/tabla.css">
+    <title>Commerline</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <h1 class="text-center py-5">Panel De Productos</h1>
+
+        <div class="section-container text-center">
+
+            <div class="card mx-1 my-4">
+                <div class="card-header">
+                    <h2>Tarjeta De Género</h2>
+
+                    <button type="button" class="btn btn-success d-flex ms-auto align-items-center"
+                        data-bs-toggle="modal" data-bs-target="#tarjetaGeneroCP" data-bs-whatever="@mdo"><i
+                            class="fa-solid fa-venus-mars"></i>&nbsp;Nuevo</button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">N°</th>
+                                    <th scope="col">Tarjeta De</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Controles</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mujer</td>
+                                    <td><span class="badge text-bg-success">Activo</span>
+                                        <span class="badge text-bg-warning">Inactivo</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-wrap gap-2 card-buttons">
+                                            <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                            <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center">
+
+            <div class="card mx-1 my-4">
+                <div class="card-header">
+                    <h2>Tarjeta De Productos</h2>
+
+                    <button type="button" class="btn btn-success d-flex ms-auto align-items-center"
+                        data-bs-toggle="modal" data-bs-target="#tarjetaProductosCP" data-bs-whatever="@mdo"><i
+                            class="fa-solid fa-gift"></i>&nbsp;Nuevo</button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">N°</th>
+                                    <th scope="col">Tarjeta De</th>
+                                    <th scope="col">Tarjeta Del Producto</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Controles</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mujer</td>
+                                    <td>Jabones</td>
+                                    <td><span class="badge text-bg-success">Activo</span>
+                                        <span class="badge text-bg-warning">Inactivo</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-wrap gap-2 card-buttons">
+                                            <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                            <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center">
+
+            <div class="card mx-1 my-4">
+                <div class="card-header">
+                    <h2>Productos</h2>
+
+                    <button type="button" class="btn btn-success d-flex ms-auto align-items-center"
+                        data-bs-toggle="modal" data-bs-target="#submenuProductoCP" data-bs-whatever="@mdo"><i
+                            class="fa-solid fa-seedling"></i>&nbsp;Nuevo</button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">N°</th>
+                                    <th scope="col">Tarjeta De</th>
+                                    <th scope="col">Tarjeta Del Producto</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Alt Imagen</th>
+                                    <th scope="col">Marca</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Contenido</th>
+                                    <th scope="col">Talla</th>
+                                    <th scope="col">SKU Proveedor</th>
+                                    <th scope="col">Proveedor</th>
+                                    <th scope="col">Cantidad Por Caja</th>
+                                    <th scope="col">Cantidad De Cajas</th>
+                                    <th scope="col">Cantidad Total</th>
+                                    <th scope="col">Precio Unitario</th>
+                                    <th scope="col">Precio Por Caja</th>
+                                    <th scope="col">Precio Total</th>
+                                    <th scope="col">Peso Unitario</th>
+                                    <th scope="col">Peso Por Caja</th>
+                                    <th scope="col">Peso Total</th>
+                                    <th scope="col">Fecha Producción</th>
+                                    <th scope="col">Fecha Vencimiento</th>
+                                    <th scope="col">Lote</th>
+                                    <th scope="col">Fecha Compra</th>
+                                    <th scope="col">Cantidad En Almacen</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Controles</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mujer</td>
+                                    <td>Jabones</td>
+                                    <td>www/img</td>
+                                    <td>Imagen De Cremas</td>
+                                    <td>L'Oréal</td>
+                                    <td>Base de maquillaje</td>
+                                    <td>Base líquida de larga duración, acabado mate, 30 tonos disponibles</td>
+                                    <td>23 g</td>
+                                    <td>Sin Talla</td>
+                                    <td>4534345453454</td>
+                                    <td>Grupo Ast</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>S/. 6</td>
+                                    <td>S/. 48</td>
+                                    <td>S/. 96</td>
+                                    <td>23 g</td>
+                                    <td>184 g</td>
+                                    <td>368 g</td>
+                                    <td>15/03/2024</td>
+                                    <td>19/05/2027</td>
+                                    <td>8748574875847548</td>
+                                    <td>14/05/2025</td>
+                                    <td>16</td>
+                                    <td><span class="badge text-bg-success">Activo</span>
+                                        <span class="badge text-bg-warning">Inactivo</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-wrap gap-2 card-buttons">
+                                            <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                            <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="tarjetaGeneroCP" tabindex="-1" aria-labelledby="tarjetaGeneroCPLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="tarjetaGeneroCPLabel">Crear Tarjeta De Género
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="tarjetaGenero" class="col-form-label">Tarjeta De:</label>
+                                <input type="text" class="form-control" id="tarjetaGenero">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="tarjetaProductosCP" tabindex="-1" aria-labelledby="tarjetaProductosCPLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="tarjetaProductosCPLabel">Crear Tarjeta De
+                            Productos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="generoSubmenu" class="col-form-label">Tarjeta De:</label>
+                                <select class="form-select" id="generoSubmenu">
+                                    <option selected>Elige El Género En La Tarjeta</option>
+                                    <option value="tarjetaMujer">Mujer</option>
+                                    <option value="tarjetaVaron">Varon</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tarjetaProductos" class="col-form-label">Tarjeta De Productos:</label>
+                                <input type="text" class="form-control" id="tarjetaProductos">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="submenuProductoCP" tabindex="-1" aria-labelledby="submenuProductoCPLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="submenuProductoCPLabel">Crear Submenú De
+                            Productos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="generoSubmenu" class="col-form-label">Tarjeta De:</label>
+                                <select class="form-select" id="generoSubmenu">
+                                    <option selected>Elige El Género En La Tarjeta</option>
+                                    <option value="tarjetaMujer">Mujer</option>
+                                    <option value="tarjetaVaron">Varon</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tarjetaDeProductos" class="col-form-label">Tarjeta De Productos:</label>
+                                <select class="form-select" id="tarjetaDeProductos">
+                                    <option selected>Elije La Tarjeta Donde Estara</option>
+                                    <option value="submenuCremasHidratantes">Cremas Hidratantes</option>
+                                    <option value="submenuDesodorantes">Desodorantes</option>
+                                    <option value="submenuJabones">Jabones</option>
+                                    <option value="submenuShampoos">Shampoos</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="descuento" class="form-label">Descuento:</label>
+                                <input class="form-control" type="text" id="descuento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="marca" class="col-form-label">Marca:</label>
+                                <input type="text" class="form-control" id="marca">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipoProducto" class="col-form-label">Tipo De Producto:</label>
+                                <input type="text" class="form-control" id="tipoProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcionProducto" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcionProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contenidoProducto" class="col-form-label">Contenido:</label>
+                                <input type="text" class="form-control" id="contenidoProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tallaProducto" class="col-form-label">Talla:</label>
+                                <input type="text" class="form-control" id="tallaProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="skuProveedor" class="col-form-label">SKU Proveedor:</label>
+                                <input type="text" class="form-control" id="skuProveedor">
+                            </div>
+                            <div class="mb-3">
+                                <label for="proveedor" class="col-form-label">Proveedor:</label>
+                                <input type="text" class="form-control" id="proveedor">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cantidadPorCaja" class="col-form-label">Cantidad Por Caja:</label>
+                                <input type="text" class="form-control" id="cantidadPorCaja">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cantidadTotalUnitaria" class="col-form-label">Cantidad Total
+                                    Unitaria:</label>
+                                <input type="text" class="form-control" id="cantidadTotalUnitaria">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precioUnitario" class="col-form-label">Precio Unitario:</label>
+                                <input type="text" class="form-control" id="precioUnitario" value="S/. ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precioPorCaja" class="col-form-label">Precio Por Caja:</label>
+                                <input type="text" class="form-control" id="precioPorCaja" value="S/. ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precioTotal" class="col-form-label">Precio Total:</label>
+                                <input type="text" class="form-control" id="precioTotal" value="S/. ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesoUnitario" class="col-form-label">Peso Unitario:</label>
+                                <input type="text" class="form-control" id="pesoUnitario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesoPorCaja" class="col-form-label">Peso Por Caja:</label>
+                                <input type="text" class="form-control" id="pesoPorCaja">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesoTotal" class="col-form-label">Peso Total:</label>
+                                <input type="text" class="form-control" id="pesoTotal">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaProduccion" class="col-form-label">Fecha De Producción:</label>
+                                <input type="date" class="form-control" id="fechaProduccion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaVencimiento" class="col-form-label">Fecha De Vencimiento:</label>
+                                <input type="date" class="form-control" id="fechaVencimiento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="lote" class="col-form-label">Lote:</label>
+                                <input type="text" class="form-control" id="lote">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaCompra" class="col-form-label">Fecha De Compra:</label>
+                                <input type="date" class="form-control" id="fechaCompra">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cantidadAlmacen" class="col-form-label">Cantidad En El Almacen:</label>
+                                <input type="text" class="form-control" id="cantidadAlmacen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+
+    <script src="resources/img/icons/iconos.js"></script>
+
+</body>
+
+</html>

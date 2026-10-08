@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+.information {
+    background-color: rgb(243, 243, 250);
+}
+
+.legal-section {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.legal-title {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.contact-box {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

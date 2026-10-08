@@ -1,0 +1,42 @@
+/*RESETEAR LOS MARGENES DE LOS NAVEGADORES*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text1{
+    background: cadetblue;
+    color: blue;
+    /*width: 400px;*/
+    /*height: 200px; ideal alto automatico*/
+    padding: 20px 50px 30px 100px; /*arriba, derecha, bajo, izquierda*/
+    text-align: center;
+   /* margin: 20px;*/
+    border:10px solid black;
+
+}
+
+.bloque{
+    background: red;
+    color: white;
+     width: 400px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block; /*se muestra en bloque una debajo de otra; si colocamos inline-block se mostrara consecutiva*/
+}
+
+.boton{
+    display: inline-block;
+    background: azure;
+    color: rgba(136, 132, 132, 0.808);
+    margin: 40px;
+     width: 400px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.5s ease;
+}
+.boton:hover{
+    background: blue;
+    color: white;
+}

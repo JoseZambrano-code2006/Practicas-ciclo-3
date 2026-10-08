@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="js/iconos.js"></script>
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ecommerce</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!--cambio de clase  <span class="navbar-toggler-icon"></span> a <i class="fa-solid fa-bars"></i> usando fontAwesome-->
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html"><img src="img/icono.png" width="25px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Gestion de ventas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="product.html">Productos</a></li>
+                                <li><a class="dropdown-item" href="ventas.html">Ventas</a></li>
+                                <li><a class="dropdown-item" href="registro_ventas.html">Registro de Ventas</a></li>
+                             </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                    </form>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perfil
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="login.html">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--cuerpo de la pagina-->
+    <div class="content">
+        <div class="container text-center mt-5">
+            <!--Boton del modal-->
+            <button type="button" class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive">
+                <table class="table align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre del Cliente</th>
+                    <th scope="col">Correo Electrónico</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Producto Vendido</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio Total</th>
+                    <th scope="col">Fecha de Venta</th>
+                    <th scope="col">estado</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>jose zambrano</td>
+                    <td>gaaa@upeu.com</td>
+                    <td>925192911</td>
+                    <td>cocacola</td>
+                    <td>2</td>
+                    <td>S/.5.00</td>
+                    <td>20/05/2025</td>
+                    <td><span class="badge text-bg-success">Pagado</span>
+                        <span class="badge text-bg-warning">Fiado</span>
+                    </td>
+                    <td>
+                      <a class="btn btn-primary btn-sm"  href="#">editar</a>
+                      <a class="btn btn-danger btn-sm btn-delete" href="#">eliminar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+         
+        </div>
+        
+        </div>
+    </div>
+
+<!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Producto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" >
+                </div> 
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="email" name="email">
+                        <div class="form-text input-group">Nunca compartiremos su correo electrónico con nadie más.
+                        </div>
+                        <div class="invalid-feedback">Por favor, ingrese un correo válido.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono">
+                    <div class="invalid-feedback">El teléfono debe contener solo números.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="producto" class="form-label">Producto Vendido</label>
+                    <input type="text" class="form-control" id="producto" name="cantidad">
+                    <div class="invalid-feedback">El producto es obligatorio.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input class="form-control" type="number" id="cantidad" placeholder="0" >
+                    <div class="invalid-feedback">La cantidad debe ser un número positivo entero.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="precio" class="form-label">Precio Total</label>
+                    <input class="form-control" type="number" id="precio" step="0.01" placeholder="0.00" name="precio">
+                    <div class="invalid-feedback">El precio debe ser un número positivo.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha_creacion" class="form-label">Fecha de Venta</label>
+                    <input class="form-control" type="date" id="fecha_creacion" name="fecha_creacion">
+                    <div class="invalid-feedback">Marque una fecha</div>
+                </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Registrar Venta</button>
+                    <button class="btn btn-secondary" type="reset">Limpiar Formulario</button>            
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="flex-bottom fixed-bottom text-center py-4 footer-color">
+    <div class="container">
+        <p>&copy;  JAST 2025 Ecommers. Todos los derechos reservados.</p>
+        <p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </p>
+    </div>
+  
+</footer>
+</body>
+
+<script>
+    document.querySelectorAll(".btn-delete").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        Swal.fire({
+          title: "¿Estás seguro?",
+          text: "¡No podrás revertir esto!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Sí, eliminar"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "¡Eliminado!",
+              text: "El registro ha sido eliminado.",
+              icon: "success"
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script src="js/bootstrap.bundle.min.js"
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+  <script src="js/sweetalert2.js"></script>
+ 
+   <script src="js/validaciones.js"> </script>
+
+
+</html>

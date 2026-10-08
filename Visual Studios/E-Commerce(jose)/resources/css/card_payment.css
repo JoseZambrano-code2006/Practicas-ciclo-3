@@ -1,0 +1,59 @@
+.container-fluid {
+    background-image: url('../img/pagar_con_tarjeta.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(50vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+.payment-card {
+    background: linear-gradient(45deg, rgb(74, 108, 247, 0.7), rgb(37, 65, 178, 0.7));
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.card-logo {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.card-number {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjeta-de-pago {
+    max-width: 550px;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+.tarjeta-principal {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+.tooltip-inner {
+    background-color: var(--bs-secondary);
+    color: white;
+}
+
+.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: var(--bs-secondary);
+}

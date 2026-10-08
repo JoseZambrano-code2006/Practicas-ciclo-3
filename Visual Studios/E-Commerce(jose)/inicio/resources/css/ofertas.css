@@ -1,0 +1,272 @@
+.main-header {
+    background: linear-gradient(135deg, #5d5ddb, #f0a3ec, #cfd1d0) !important;
+    padding: 0.61rem 0.5rem;
+}
+
+.auth-links li {
+    transition: all 0.3s ease;
+}
+
+.auth-links li:hover {
+    transform: translateY(-2px);
+}
+
+.auth-links a {
+    color: #585757 !important;
+    font-weight: 500 !important;
+    transition: all 0.4s ease;
+}
+
+.auth-links a:hover {
+    color: black !important;
+}
+
+.auth-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: all 0.3s ease;
+}
+
+.auth-links a:hover::after {
+    width: 80%;
+}
+
+.auth-links a:active {
+    transform: scale(0.95);
+}
+
+.auth-links a.active {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+}
+
+.auth-links a.active::after {
+    width: 80%;
+    background-color: #ecf0f1;
+}
+
+.top-bar {
+    background-color: rgb(252, 252, 255) !important;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: cornflowerblue !important;
+}
+
+.navigation {
+    background-color: cornflowerblue !important;
+}
+
+.navbar-toggler {
+    background: white;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.nav-link{
+    color: white !important;
+}
+.navbar-collapse a:hover {
+    color: black !important;
+}
+
+.carousel-item img {
+    max-height: 580px;
+    max-width: 1250px;
+    margin: 0 auto;
+    border-radius: 6px;
+    object-fit: fill;
+    border: 3px solid rgb(216, 216, 216);
+}
+
+.carousel-caption {
+    border-radius: 8px;
+    background-color: rgba(231, 230, 230, 0.8);
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
+.carousel-button {
+    margin: 0 auto;
+    background-color: #e83e8c !important;
+    color: white !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #d42d7b !important;
+    color: white !important;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+
+.card-product {
+    transition: 0.3s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+}
+
+.discount-badge {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.card-product .card-img-top {
+    max-height: 280px;
+}
+
+.categories {
+    justify-content: center;
+}
+
+.card-information {
+    text-align: center;
+}
+
+.card-button {
+    margin: 0 auto;
+}
+
+.physical-attributes {
+    font-size: 15px;
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+:root {
+    --primary-color: #25af2a;
+    --text-color: #333;
+    --light-text: #777;
+    --white: #fff;
+    --light-bg: #f9f9f9;
+    --dark-bg: #2c3e50;
+}
+
+.footer-brand .logo {
+    color: cornflowerblue;
+}
+
+.footer-list-title {
+    font-size: 18px;
+    color: gray;
+}
+
+.footer {
+    background-color: rgb(240, 238, 238);
+    color: var(--light-text);
+    padding-top: 2rem;
+}
+
+.footer-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    border: 1px solid;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    color: gray;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: cornflowerblue;
+}
+
+.footer-list-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-link,
+.contact-link {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover,
+.contact-link:hover {
+    color: var(--primary-color);
+}
+
+.button-email {
+    border: 1px solid #ddd;
+    color: var(--light-text);
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+    color: #6c757d;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.derechos-reservados {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+.derechos-reservados:hover {
+    color: rgb(216, 216, 216);
+    transition: all 0.3s ease;
+}
+
+.cuadro-secundario {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 1.3rem 0;
+}
+
+.footer-bottom-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.footer-bottom-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-bottom-link:hover {
+    color: var(--primary-color);
+}

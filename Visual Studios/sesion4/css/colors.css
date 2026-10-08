@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.colors{
+    width: 400px;
+    height: 500px;
+    color: tomato;
+    background: black;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    width: 400px;
+    height: 500px;
+    color: tomato;
+    background: black;
+    background-image: url("../img/patron.jpg");
+    background-repeat: repeat;  
+}

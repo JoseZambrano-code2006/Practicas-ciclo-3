@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/logo/Logo-PavoReal.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/dashboard_manager_main_page.css">
+    <title>Commerline</title>
+</head>
+
+<body>
+
+    <div class="container-fluid my-4">
+
+        <h1 class="text-center">Panel Principal</h1>
+
+        <div class="section-container text-center mt-5">
+            <h2>Carrusel</h2>
+
+            <button type="button" class="btn btn-success ms-auto d-flex mx-3 my-4" data-bs-toggle="modal"
+                data-bs-target="#modalCarrusel" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive mx-3">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Alt Imagen</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Nombre Del Botón</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Controles</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>uhieihfeiufue</td>
+                            <td>Cosmeticos agrupados</td>
+                            <td>First slide label</td>
+                            <td>Some representative placeholder content for the first slide.</td>
+                            <td>Lo Quiero</td>
+                            <td><span class="badge text-bg-success">Activo</span>
+                                <span class="badge text-bg-warning">Inactivo</span>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                    <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCarrusel" tabindex="-1" aria-labelledby="modalCarruselLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="modalCarruselLabel">Crear Carrusel</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="titulo" class="col-form-label">Título:</label>
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre_boton" class="col-form-label">Nombre Del Botón:</label>
+                                <input type="email" class="form-control" id="nombre_boton">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center mt-5">
+            <h2>Tarjeta Con Imagen A La Izquierda</h2>
+
+            <button type="button" class="btn btn-success ms-auto d-flex mx-3 my-4" data-bs-toggle="modal"
+                data-bs-target="#modalImagenIzquierda" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive mx-3">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Alt Imagen</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Controles</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>uhieihfeiufue</td>
+                            <td>Imagen Ancha</td>
+                            <td>Card title</td>
+                            <td>This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</td>
+                            <td><span class="badge text-bg-success">Activo</span>
+                                <span class="badge text-bg-warning">Inactivo</span>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                    <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImagenIzquierda" tabindex="-1" aria-labelledby="modalImagenIzquierdaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="modalImagenIzquierdaLabel">Crear Tarjeta Con
+                            Imagen A La Izquierda</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="titulo" class="col-form-label">Título:</label>
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center mt-5">
+            <h2>Tarjeta Con Imagen A La Derecha</h2>
+
+            <button type="button" class="btn btn-success ms-auto d-flex mx-3 my-4" data-bs-toggle="modal"
+                data-bs-target="#modalImagenDerecha" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive mx-3">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Alt Imagen</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Card title</td>
+                            <td>This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</td>
+                            <td>uhieihfeiufue</td>
+                            <td>Imagen de Cosmeticos</td>
+                            <td><span class="badge text-bg-success">Activo</span>
+                                <span class="badge text-bg-warning">Inactivo</span>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                    <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImagenDerecha" tabindex="-1" aria-labelledby="modalImagenDerechaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="modalImagenDerechaLabel">Crear Tarjeta Con
+                            Imagen
+                            A La Derecha</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="titulo" class="col-form-label">Título:</label>
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center mt-5">
+            <h2>Tarjeta De Tres</h2>
+
+            <button type="button" class="btn btn-success ms-auto d-flex mx-3 my-4" data-bs-toggle="modal"
+                data-bs-target="#modalTarjetaTres" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive mx-3">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Alt Imagen</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Controles</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>uhieihfeiufue</td>
+                            <td>Tarjeta Imagen</td>
+                            <td>Card title</td>
+                            <td>This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                                This content is a little bit longer.</td>
+                            <td><span class="badge text-bg-success">Activo</span>
+                                <span class="badge text-bg-warning">Inactivo</span>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                    <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTarjetaTres" tabindex="-1" aria-labelledby="modalTarjetaTresLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="modalTarjetaTresLabel">Crear Tarjeta De Tres
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="titulo" class="col-form-label">Título:</label>
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container text-center mt-5">
+            <h2>Tarjeta De Categorías</h2>
+
+            <button type="button" class="btn btn-success ms-auto d-flex mx-3 my-4" data-bs-toggle="modal"
+                data-bs-target="#modalCategoria" data-bs-whatever="@mdo">Nuevo</button>
+
+            <div class="table-responsive mx-3">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Alt Imagen</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Botón</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Controles</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>uhieihfeiufue</td>
+                            <td>Imagen Categorias</td>
+                            <td>Cuidado Personal</td>
+                            <td>Cuida de ti como mereces: renueva tu energía, equilibra tu mente y resalta tu bienestar
+                                cada
+                                día.</td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-danger btn-sm" href="#">Mujer</a>
+                                    <a class="btn btn-primary btn-sm" href="#">Varon</a>
+                                    <a class="btn btn-dark btn-sm" href="#">Ver Ofertas</a>
+                                </div>
+                            </td>
+                            <td><span class="badge text-bg-success">Disponible</span>
+                                <span class="badge text-bg-warning">Inactivo</span>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-wrap gap-2 card-buttons">
+                                    <a class="btn btn-primary btn-sm" href="#">Editar</a>
+                                    <a class="btn btn-danger btn-sm btn-delete" href="#">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCategoria" tabindex="-1" aria-labelledby="modalCategoriaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="modalCategoriaLabel">Tarjeta De Categorías
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alt_imagen" class="form-label">Alt Imagen:</label>
+                                <input type="text" class="form-control" id="alt_imagen">
+                            </div>
+                            <div class="mb-3">
+                                <label for="titulo" class="col-form-label">Título:</label>
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label class="col-form-label">Que Botón Se Mostrará:</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="btn-mujer">
+                                    <label class="form-check-label" for="btn-mujer">Mujer</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="btn_varon">
+                                    <label class="form-check-label" for="btn_varon">Varon</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="btn_ofertas">
+                                    <label class="form-check-label" for="btn_ofertas">Ver Ofertas</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="col-form-label">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option selected>Estado De La Publicación</option>
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

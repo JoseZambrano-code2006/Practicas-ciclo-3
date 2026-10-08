@@ -1,0 +1,38 @@
+/*RESETEAR LOS MARGENES DE LOS NAVEGADORES*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.section {
+    width: 600px;
+    background: #f2f2f2;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+.titulo {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 800;
+    display: inline;
+}
+
+.parrafo {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: justify;
+
+}
+
+.enlace {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
